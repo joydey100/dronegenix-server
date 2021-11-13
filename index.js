@@ -6,7 +6,7 @@ const cors = require("cors");
 const ObjectId = require("mongodb").ObjectId;
 const port = process.env.PORT || 5000;
 
-//config dotenv
+//Config dotenv
 require("dotenv").config();
 
 // Middleware
@@ -38,7 +38,7 @@ async function run() {
       res.json(result);
     });
 
-    // P|ost new drone in Drone list
+    // Post new drone in Drone list
     app.post("/dronelist", async (req, res) => {
       const info = req.body;
       const result = await droneLists.insertOne(info);
@@ -60,14 +60,14 @@ async function run() {
       res.json(result);
     });
 
-    // post a review
+    // Post a review
     app.post("/reviews", async (req, res) => {
       const info = req.body;
       const result = await reviews.insertOne(info);
       res.json(result);
     });
 
-    // specific product
+    // Specific Product
     app.get("/drone/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: ObjectId(id) };
@@ -75,7 +75,7 @@ async function run() {
       res.json(result);
     });
 
-    // Post order
+    // Post Order
     app.post("/orders", async (req, res) => {
       const info = req.body;
       const result = await orders.insertOne(info);
@@ -128,7 +128,7 @@ async function run() {
       res.json(result);
     });
 
-    // Get  admin user info
+    // Get admin user info
     app.get("/users/:email", async (req, res) => {
       const email = req.params.email;
       const query = { email };
