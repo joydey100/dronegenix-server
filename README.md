@@ -4,12 +4,12 @@ Dronegenix is a niche product website. This website is mainly focused on buying 
 
 ## Some Cool Features
 
-- Responsive for Mobile and desktop Website
+- Dronegenix is a drone-selling website with responsive functionality for different device users.
 - Used one the most Popular React Framework - Material UI
-- Routing Different Page with loading using - React Router DOM
-- Restrict User if the user is not logged In with Private Route
-- Create User with Registration Form and Google Sign In
-- Make Admin Panel
-- Manage Orders, Add Product, Manage Products and so on.
+- User can purchase drone after login with Email-Password Authentication and a Google Authentication system.
+- if the user is not logged in, will not be able to purchase any product.
+- After login, the user can buy the product, see his payment status and add a review to the website
+- Route in different pages without reloading.
+- Admin can manage products, add a new product, manage all the user's orders, make a new admin, and change the user's order status.
 - Using MongoDB to store Data.
   and also with so many awesome functionality.
